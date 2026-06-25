@@ -2,14 +2,12 @@
 
 **AI Data Janitor** is a production-ready, usage-based micro-SaaS that autonomously connects to Salesforce and HubSpot via OAuth, normalizes fields, deduplicates records, enriches missing data from external APIs, and meters every cleaned record to Stripe at **$0.02 per record**.
 
-## 🚀 One-Click Deploy
-
-| Platform | Button | Cost |
-|----------|--------|------|
-| **Vercel** (Frontend) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/shujariaz-oss/ai-data-janitor&root-directory=frontend) | Free |
-| **Fly.io** (Backend) | [![Deploy to Fly.io](https://fly.io/button.svg)](https://fly.io/launch/github/shujariaz-oss/ai-data-janitor) | Free |
-
----
+> **Note:** CI/CD workflows are in `github/workflows/`. Rename to `.github/workflows/` for GitHub Actions to recognize them:
+> ```bash
+> git mv github .github
+> git commit -m "chore: move workflows to .github directory"
+> git push
+> ```
 
 ## Quick Start
 
