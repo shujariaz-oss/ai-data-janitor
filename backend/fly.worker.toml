@@ -1,0 +1,15 @@
+app = "data-janitor-worker"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  APP_ENV = "production"
+
+[processes]
+  app = "celery -A app.tasks.celery worker -l info -c 2"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
